@@ -1,0 +1,11 @@
+# 对应microservice-config-server所获取的配置文件的{application}
+spring:
+  application:
+    name: microservice-config-client   
+  cloud:
+    config:
+      uri: http://localhost:8080/ # bootstrap.* 启动上下文配置文件优先加载
+      profile: dev  
+      label: master 
+# profile: dev ：指定profile，对应microservice-config-server所获取的配置文件中的{profile} 
+# label: master：指定git仓库的分支，对应microservice-config-server所获bootstrap.yml取的配置文件的{label}

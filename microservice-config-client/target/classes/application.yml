@@ -1,0 +1,4 @@
+server:
+  port: 8081
+#  配置profile 如果配置以后则spring 不会读取配置文件里面profile的配置信息了
+#  profile: configclient
